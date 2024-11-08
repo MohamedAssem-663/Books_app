@@ -1,4 +1,4 @@
-import 'package:books_app/core/Utils/Functions/assets.dart';
+import 'package:books_app/core/Utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 30, bottom: 10),
+      padding: const EdgeInsets.only(top: 30, bottom: 10),
       child: Row(
         children: [
           Image.asset(
