@@ -21,6 +21,9 @@ class HomeViewBody extends StatelessWidget {
             'Best Seller',
             style: Styles.textStyle18.copyWith(fontFamily: kGtSectraFine),
           ),
+          const SizedBox(
+            height: 20,
+          ),
           const BestSellerListView(),
         ],
       ),
@@ -50,14 +53,24 @@ class BestSellerListView extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 10,
+            width: 30,
           ),
-          const Column(
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Harry Potter and the Goblet of Fire ',
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
+                  'Harry Potter and the Goblet of Fire ',
+                  style: Styles.textStyle20,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-              Text('Harry Potter  ')
+              const Text(
+                'Harry Potter',
+              )
             ],
           ),
         ],
