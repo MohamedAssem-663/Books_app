@@ -1,3 +1,4 @@
+import 'package:books_app/constants.dart';
 import 'package:books_app/core/Utils/assets.dart';
 import 'package:books_app/core/Utils/styles.dart';
 import 'package:books_app/features/home/prisintation/views/widgets/custom_app_bar.dart';
@@ -9,18 +10,18 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar(),
-          FeaturedBooksListView(),
+          const CustomAppBar(),
+          const FeaturedBooksListView(),
           Text(
             'Best Seller',
-            style: Styles.titleMedium,
+            style: Styles.textStyle18.copyWith(fontFamily: kGtSectraFine),
           ),
-          BestSellerListView(),
+          const BestSellerListView(),
         ],
       ),
     );
