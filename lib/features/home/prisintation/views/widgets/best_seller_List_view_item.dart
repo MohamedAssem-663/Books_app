@@ -4,8 +4,8 @@ import 'package:books_app/core/Utils/styles.dart';
 import 'package:books_app/features/home/prisintation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class BestSellerListViewItem extends StatelessWidget {
+  const BestSellerListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +17,7 @@ class BestSellerListView extends StatelessWidget {
             aspectRatio: 2.5 / 4,
             child: Container(
               decoration: BoxDecoration(
+                color: Colors.orange,
                 borderRadius: BorderRadius.circular(12),
                 image: const DecorationImage(
                   fit: BoxFit.fill,
