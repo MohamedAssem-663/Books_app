@@ -1,3 +1,4 @@
+import 'package:books_app/features/search/presintation/views/widgets/custom_search_text_field.dart';
 import 'package:flutter/material.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -5,23 +6,14 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        TextField(
-          decoration: InputDecoration(
-            labelText: 'Search',
-            hintText: 'search here',
-            hintStyle: const TextStyle(
-              color: Colors.white,
-            ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: Colors.green),
-            ),
-          ),
-        )
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CustomSearchtextfield(),
+        ],
+      ),
     );
   }
 }
