@@ -1,24 +1,20 @@
 import 'package:books_app/core/Utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatefulWidget {
+class CustomButton extends StatelessWidget {
   const CustomButton(
       {super.key,
       required this.text,
       required this.backgroundColor,
-      this.borderRadius = BorderRadius.zero,
+      this.borderRadius,
       required this.textColor,
       this.fontSize});
   final String text;
   final Color backgroundColor;
   final Color textColor;
-  final BorderRadiusGeometry borderRadius;
+  final BorderRadiusGeometry? borderRadius;
   final double? fontSize;
-  @override
-  State<CustomButton> createState() => _CustomButtonState();
-}
 
-class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -26,17 +22,17 @@ class _CustomButtonState extends State<CustomButton> {
       child: TextButton(
         onPressed: () {},
         style: TextButton.styleFrom(
-          backgroundColor: widget.backgroundColor,
+          backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: widget.borderRadius,
+            borderRadius: borderRadius ?? BorderRadius.circular(12),
           ),
         ),
         child: Text(
-          widget.text,
+          text,
           style: Styles.textStyle18.copyWith(
-              color: widget.textColor,
+              color: textColor,
               fontWeight: FontWeight.w900,
-              fontSize: widget.fontSize),
+              fontSize: fontSize),
         ),
       ),
     );
