@@ -2,7 +2,7 @@ import 'package:books_app/constants.dart';
 import 'package:books_app/core/Utils/app_router.dart';
 import 'package:books_app/core/Utils/assets.dart';
 import 'package:books_app/core/Utils/styles.dart';
-import 'package:books_app/features/home/prisintation/views/widgets/book_rating.dart';
+import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

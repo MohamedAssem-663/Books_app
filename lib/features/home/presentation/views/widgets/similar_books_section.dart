@@ -1,6 +1,6 @@
 import 'package:books_app/core/Utils/app_router.dart';
 import 'package:books_app/core/Utils/styles.dart';
-import 'package:books_app/features/home/prisintation/views/widgets/similar_books_list_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

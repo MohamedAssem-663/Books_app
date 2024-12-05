@@ -1,13 +1,13 @@
-import 'package:books_app/features/home/prisintation/views/widgets/custom_book_item.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
 
-class SimilarBooksListView extends StatelessWidget {
-  const SimilarBooksListView({super.key});
+class FeaturedBooksListView extends StatelessWidget {
+  const FeaturedBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .2,
+      height: MediaQuery.of(context).size.height * .3,
       child: ListView.builder(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,

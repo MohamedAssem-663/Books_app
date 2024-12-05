@@ -1,6 +1,6 @@
-import 'package:books_app/features/home/prisintation/views/widgets/book_details_section.dart';
-import 'package:books_app/features/home/prisintation/views/widgets/custom_book_detials_app_bar.dart';
-import 'package:books_app/features/home/prisintation/views/widgets/similar_books_section.dart';
+import 'package:books_app/features/home/presentation/views/widgets/book_details_section.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_book_detials_app_bar.dart';
+import 'package:books_app/features/home/presentation/views/widgets/similar_books_section.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {

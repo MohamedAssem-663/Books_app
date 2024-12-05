@@ -1,6 +1,6 @@
 import 'package:books_app/features/Splash/presintation/views/splash_view.dart';
-import 'package:books_app/features/home/prisintation/views/book_details_view.dart';
-import 'package:books_app/features/home/prisintation/views/home_view.dart';
+import 'package:books_app/features/home/presentation/views/book_details_view.dart';
+import 'package:books_app/features/home/presentation/views/home_view.dart';
 import 'package:books_app/features/search/presintation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
 
