@@ -1,4 +1,3 @@
-import 'package:books_app/core/Utils/assets.dart';
 import 'package:flutter/material.dart';
 
 class SlidingText extends StatelessWidget {

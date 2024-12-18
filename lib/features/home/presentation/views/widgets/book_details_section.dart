@@ -1,11 +1,13 @@
 import 'package:books_app/core/Utils/styles.dart';
 import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:books_app/features/home/presentation/views/widgets/books_action.dart';
-import 'package:books_app/features/home/presentation/views/widgets/custom_book_item.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsSction extends StatelessWidget {
-  const BookDetailsSction({super.key});
+  const BookDetailsSction({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +46,8 @@ class BookDetailsSction extends StatelessWidget {
           height: 18,
         ),
         const BookRating(
+          rating: 10,
+          count: 100,
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         const SizedBox(

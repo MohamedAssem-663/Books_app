@@ -4,7 +4,9 @@ import 'package:books_app/features/home/presentation/views/widgets/similar_books
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
-  const BookDetailsViewBody({super.key});
+  const BookDetailsViewBody({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
