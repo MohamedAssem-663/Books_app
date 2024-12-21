@@ -25,14 +25,14 @@ class BookRating extends StatelessWidget {
         ),
         const SizedBox(width: 6),
         Text(
-          '$count',
+          '$rating',
           style: Styles.textStyle16,
         ),
         const SizedBox(width: 5),
         Opacity(
           opacity: .5,
           child: Text(
-            '($rating)',
+            '($count)',
             style: Styles.textStyle14,
           ),
         )
