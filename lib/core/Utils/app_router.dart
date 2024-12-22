@@ -1,5 +1,6 @@
 import 'package:books_app/core/Utils/service_locator.dart';
 import 'package:books_app/features/Splash/presintation/views/splash_view.dart';
+import 'package:books_app/features/home/data/models/book_model/book_model.dart';
 import 'package:books_app/features/home/data/repos/home_repo_impl.dart';
 import 'package:books_app/features/home/presentation/manger/similar_books_cubit/similar_book_cubit.dart';
 import 'package:books_app/features/home/presentation/views/book_details_view.dart';
@@ -28,7 +29,7 @@ abstract class AppRouter {
           create: (context) => SimilarBookCubit(
             getIt.get<HomeRepoImpl>(),
           ),
-          child: const BookDetailsView(),
+          child: BookDetailsView(bookModel: state.extra as BookModel),
         ),
       ),
       GoRoute(
