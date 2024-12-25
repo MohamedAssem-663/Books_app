@@ -5,7 +5,7 @@ import 'package:books_app/features/home/data/repos/home_repo_impl.dart';
 import 'package:books_app/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
 import 'package:books_app/features/home/presentation/manger/newset_books_cubit/newset_books_cubit.dart';
 import 'package:books_app/features/search/data/repos/search_repo_impl.dart';
-import 'package:books_app/features/search/presintation/manger/all_books_cubit/search_books_cubit.dart';
+import 'package:books_app/features/search/presentation/manger/all_books_cubit/search_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
