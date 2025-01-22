@@ -18,7 +18,7 @@ class SearchResultListView extends StatelessWidget {
           return ListView.builder(
             physics: const BouncingScrollPhysics(),
             padding: EdgeInsets.zero,
-            itemCount: state.book.length,
+            itemCount: state.searchBooks.length,
             itemBuilder: (context, index) {
               return Padding(
                 padding:
@@ -26,10 +26,10 @@ class SearchResultListView extends StatelessWidget {
                 child: GestureDetector(
                   onTap: () {
                     GoRouter.of(context).push(AppRouter.kBookDetailsView,
-                        extra: state.book[index]);
+                        extra: state.searchBooks[index]);
                   },
                   child: BookListViewItem(
-                    bookModel: state.book[index],
+                    bookModel: state.searchBooks[index],
                   ),
                 ),
               );

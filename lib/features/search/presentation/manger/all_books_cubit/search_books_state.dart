@@ -18,7 +18,7 @@ class SearchBooksFailure extends SearchBooksState {
 }
 
 class SearchBooksSuccess extends SearchBooksState {
-  final List<BookModel> book;
+  final List<BookModel> searchBooks;
 
-  const SearchBooksSuccess(this.book);
+  const SearchBooksSuccess(this.searchBooks);
 }

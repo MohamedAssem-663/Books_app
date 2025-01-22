@@ -13,8 +13,8 @@ class SearchBooksCubit extends Cubit<SearchBooksState> {
     var result = await searchRepo.fetchAllBooks();
     result.fold((failure) {
       emit(SearchBooksFailure(failure.errMessage));
-    }, (book) {
-      emit(SearchBooksSuccess(book));
+    }, (searchBooks) {
+      emit(SearchBooksSuccess(searchBooks));
     });
   }
 }

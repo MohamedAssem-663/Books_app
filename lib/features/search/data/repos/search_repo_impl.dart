@@ -13,7 +13,8 @@ class SearchRepoImpl implements SearchRepo {
   Future<Either<Failure, List<BookModel>>> fetchAllBooks() async {
     try {
       var data = await apiService.get(
-          endPoint: 'volumes?Filtering=free-ebooks&q=All&Sorting=newest');
+          endPoint:
+              'volumes?Filtering=free-ebooks&q=subject:computer&Sorting=newest');
       List<BookModel> book = [];
       for (var item in data['items']) {
         try {
